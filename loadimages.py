@@ -6,8 +6,8 @@ import numpy as np
 
 
 def load():
-    path = 'image_dir\*.JPEG'
-    path1 = 'image_dir'
+    path = 'image\*.JPEG'
+    path1 = 'image'
     image_list = []
     for filename in glob.glob(path):
         im = Image.open(filename)
