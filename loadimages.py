@@ -6,7 +6,7 @@ import numpy as np
 
 
 def load():
-    path = 'image\*.JPEG'
+    path = 'image\*.jpg'
     path1 = 'image'
     image_list = []
     for filename in glob.glob(path):
@@ -14,7 +14,7 @@ def load():
         image_list.append(np.asarray(im).shape)
     image_names = []
     for i in os.listdir(path1):
-        if "JPEG" in i:
+        if "jpg" in i:
             image_names.append(i.split(".")[0])
     return image_names, image_list
 

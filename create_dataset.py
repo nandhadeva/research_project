@@ -23,7 +23,7 @@ def createFileList(myDir, format='.JPEG'):
             names.append(name)
     return fileList, labels, names
 # load the original image
-myFileList, labels, names  = createFileList('research_project-main/image')
+myFileList, labels, names  = createFileList('B:\gitHUB\source\images_to_npy-master\images_to_npy-master\image_dir\research_project\research_project\image')
 i = 0
 for file in myFileList:
     print(file)
